@@ -23,11 +23,7 @@ steps:
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
     contents: |
-       src/*
-       src/bin/*
-       src/views/*
-       src/routes/*
-       src/public/*
+       src/**
        package.json
     targetFolder: '$(Build.ArtifactStagingDirectory)'
   displayName: 'Copy project files'
